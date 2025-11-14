@@ -1,3 +1,1 @@
-source "aesd-assignments/Config.in"
-source "ldd/Config.in"
-source "aesd-char-driver/Config.in"
+source "$BR2_EXTERNAL/package/Config.in"

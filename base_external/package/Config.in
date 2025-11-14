@@ -1,15 +1,8 @@
-AESD_ASSIGNMENTS_VERSION = 1.0
-AESD_ASSIGNMENTS_SITE = $(BR2_EXTERNAL_BASE_EXTERNAL_DIR)/package/aesd-assignments
-AESD_ASSIGNMENTS_DEPENDENCIES =
-AESD_ASSIGNMENTS_LICENSE = GPL-2.0+
-AESD_ASSIGNMENTS_LICENSE_FILES = LICENSE
+menu "AESD External Packages"
 
-define AESD_ASSIGNMENTS_BUILD_CMDS
-    true
-endef
+source "$BR2_EXTERNAL_BASE_PATH/package/aesd-assignments/Config.in"
+source "$BR2_EXTERNAL_BASE_PATH/package/aesd-char-driver/Config.in"
+source "$BR2_EXTERNAL_BASE_PATH/package/ldd/Config.in"
 
-define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
-    true
-endef
+endmenu
 
-$(eval $(generic-package))
