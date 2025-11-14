@@ -9,7 +9,6 @@ on:
 
 jobs:
   full-test:
-    # Container preconfigured with the AESD autotest environment
     container: cuaesd/aesd-autotest:24-assignment7-buildroot
     runs-on: ubuntu-latest
     timeout-minutes: 120
