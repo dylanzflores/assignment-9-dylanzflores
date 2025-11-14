@@ -21,14 +21,8 @@ jobs:
           submodules: recursive
 
       - name: Run AESD autotest
-        env:
-          GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
         run: |
           ./clean.sh
           ./build.sh
           ./assignment-autotest/test/assignment8-buildroot/runqemu.sh
-
-      - name: Cleanup SSH keys
-        if: always()
-        run: ssh-add -D
 
