@@ -9,7 +9,7 @@ on:
 
 jobs:
   sample-test:
-    container: cuaesd/aesd-autotest:24-assignment7-buildroot
+    container: cuaesd/aesd-autotest:24-assignment9-buildroot
     runs-on: ubuntu-latest
     timeout-minutes: 60
 
